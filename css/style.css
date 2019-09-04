@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+p, a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(75, 72, 72);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#topo {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px #ccc;  /*Horizontal , vertical , descfoque da cor */
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    
+}
+
+.menu {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 100px;
+}
+
+.menu > ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+}
+
+.menu ul a {
+    padding: 1.8125em 3.75em; 
+    text-decoration: none;
+}
+
+.menu ul li:nth-child(5n) {
+    font-weight: bold;
+}
+
+.menu ul a:hover {
+    background: purple;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #ffffff;
+
+}
+
+main {
+    background: #f5f5f5;
+}
+
+#categorias {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.box {
+    width: 30%;
+    height: 60%;
+    background: #ffffff;
+    box-shadow: 0 0 0.625em rgb(228, 228, 228);
+    margin: 0 0.5em;
+    border-radius: 10px;
+    padding-top: 2em;
+}
+
+.lista_categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table, th, td {
+    width: 75%;
+    height: 3em;
+    margin-top: 3.125em;
+    border:0.0625em solid #DDDDDD;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td{
+    padding: 1em;
+    color: rgb(59, 59, 59);
+}
+
+.cadastro_categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro_categorias form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    margin-bottom: 0.5em;
+    color: rgb(107, 102, 102);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form input {
+    margin-bottom: 2em;
+    height: 3em;
+    border: 1px solid #707070;
+    border-radius:0.3125em; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.botton {
+    background: #6F47FF;
+    border:none;
+    border-radius: 0.3125em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rolagem a{
+    /* width: 4em;
+    height: 4em; */
+    /* border: 0.0625em solid #707070; */
+    border-radius: 0.250em;
+    text-decoration: none;  
+    margin: 0 1em;
+    padding: 0.1em 0.3em;
+    box-shadow: 3px 1px 2px #CCC;
+    color: purple;
+}
+
+.rolagem {
+    margin-top: 1.5em;
+}
+
+footer p{
+    padding: 1.875em;
+    text-align: center;
+}
+
+/* -- css da página home */
+
+#home__banner {
+    background-image: 
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .menu ul a{
+        padding: 1.8125em 1.75em; 
+       
+    }
+    .box {
+        width: 50vw; /*largura do box branco */
+        height: 80vh;
+    }
+    .rolagem a {
+        margin: 0 0.5em;
+    }
+}
+
+
+@media(max-width:376px) { /*tamanho padão para celulares*/
+    
+    #topo {
+        height: 42vh;
+    }
+    .menu ul {
+        display: block;
+        height: 14vh;
+    }
+    .menu ul a {
+        padding: 0.2em 2em; 
+        transition: 0.4s;
+
+    }
+    #categorias {
+        flex-wrap: wrap;
+    }
+    .container {
+        height: 180vh;
+    }
+    .box {
+        flex-grow: 2;
+        width: 80%;
+        height: 80%;
+        margin-top: 2em;
+    }
+    .rolagem a {
+        margin: 0 0.5em;
+    }
+    h2{
+        font-size: 1.05em;
+    }
+}
